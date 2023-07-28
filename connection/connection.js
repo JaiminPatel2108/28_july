@@ -1,6 +1,6 @@
 import mongoose from "mongoose"
 import dotenv from "dotenv"
-const DATA_BASE = process.env.DATA_BASE
+const DATABASE = process.env.DATABASE
 
 dotenv.config()
 
