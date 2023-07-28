@@ -10,5 +10,8 @@
     "build": "npm i"
   },
   "author": "jaimin",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
