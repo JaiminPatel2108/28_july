@@ -1,18 +1,18 @@
 import mongoose from "mongoose"
 import dotenv from "dotenv"
-const DATABASE = process.env.DATABASE
+// const DATABASE = process.env.REACT_APP_DATABASE
 
 dotenv.config()
 
 
 const connectDB = ()=>{
-    mongoose.connect(`mongodb+srv://pjaimind031:jaimin21082002@cluster0.vngpvxa.mongodb.net/new_cluster?retryWrites=true&w=majority`).then(()=>{
+    mongoose.connect(`${process.env.REACT_APP_DATABASE}`).then(()=>{
         console.log("dabase connected successfully");
     }).catch((e)=>{
         console.log(e);
     })
 
-    // console.log(DATA_BASE);
+    // console.log(process.env.REACT_APP_DATABASE);
 }
 
 export default connectDB
